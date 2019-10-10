@@ -27,7 +27,7 @@
 #define middle_dirPin 7
 #define middle_encA 32
 #define middle_encB 31
-#define middle 16
+#define middle_potPin 16
 
 //ring
 #define ring_pwmPin 10

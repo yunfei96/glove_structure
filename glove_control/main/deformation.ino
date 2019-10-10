@@ -5,5 +5,6 @@ static void deform(void* arg)
     sensor s;
     xQueueReceive(sensor_Queue, &s, portMAX_DELAY);
     Serial.println(s.p_pot);
+    
   }
 }

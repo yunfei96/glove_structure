@@ -6,13 +6,7 @@ static void motor_control(void* arg)
     struct encoder e={0,0,0,0,0,0};
     xQueueReceive(encoder_Queue, &e, portMAX_DELAY);
     Serial.println(e.tt);
-
-    //-------------tt pid------------------
-    short error = tspeed - e.tt;
-    tt_integral = tt_integral + error;
-    short derivative = error - tt_pre_error;
-    tpwm = Kp*error + Ki* tt_integral + Kd * derivative;
-    tt_pre_error = error;
+    tt_pid(e.tt);
     Serial.println(tpwm);
     //--------------------------
 //    tepwm = pid_control(tespeed, e.te);
@@ -41,6 +35,15 @@ static void motor_control(void* arg)
   }
 }
 
+void tt_pid(short curr)
+{
+  //-------------tt pid------------------
+    short error = tspeed - curr;
+    tt_integral = tt_integral + error;
+    short derivative = error - tt_pre_error;
+    tpwm = Kp*error + Ki* tt_integral + Kd * derivative;
+    tt_pre_error = error;
+}
 
 void set_thumb_pwm(boolean dir, int PWM)
 {

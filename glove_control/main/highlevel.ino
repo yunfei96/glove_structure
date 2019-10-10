@@ -5,11 +5,15 @@ static void highlevel(void* arg)
     if (Serial.available() > 0) 
     {
       //read the incoming byte:
-      char incomingByte = Serial.read();
+      char in = Serial.read();
 
       // say what you got:
       Serial.print("I received: ");
-      Serial.println(incomingByte);
+      Serial.println(in);
+      if(in == 'g')
+      {
+        //do whatever
+      }
     }
   }
 }

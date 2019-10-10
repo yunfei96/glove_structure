@@ -13,6 +13,7 @@ static void motor_control(void* arg)
     short derivative = error - tt_pre_error;
     tpwm = Kp*error + Ki* tt_integral + Kd * derivative;
     tt_pre_error = error;
+    Serial.println(tpwm);
     //--------------------------
 //    tepwm = pid_control(tespeed, e.te);
 //    ipwm = pid_control(ispeed, e.i);

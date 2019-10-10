@@ -42,38 +42,38 @@ static void motor_control(void* arg)
 }
 
 
-//void set_thumb_pwm(boolean dir, int PWM)
-//{
-//  tpwm = PWM;
-//  tdir = dir;
-//}
-//
-//void set_thumb_end_pwm(boolean dir, int PWM)
-//{
-//  tepwm = PWM;
-//  tedir = dir;
-//}
-//
-//void set_index_pwm(boolean dir, int PWM)
-//{
-//  ipwm = PWM;
-//  idir = dir;
-//}
-//
-//void set_middle_pwm(boolean dir, int PWM)
-//{
-//  mpwm = PWM;
-//  mdir = dir;
-//}
-//
-//void set_ring_pwm(boolean dir, int PWM)
-//{
-//  rpwm = PWM;
-//  rdir = dir;
-//}
-//
-//void set_pinky_pwm(boolean dir, int PWM)
-//{
-//  ppwm = PWM;
-//  pdir = dir;
-//}
+void set_thumb_pwm(boolean dir, int PWM)
+{
+  tpwm = PWM;
+  tdir = dir;
+}
+
+void set_thumb_end_pwm(boolean dir, int PWM)
+{
+  tepwm = PWM;
+  tedir = dir;
+}
+
+void set_index_pwm(boolean dir, int PWM)
+{
+  ipwm = PWM;
+  idir = dir;
+}
+
+void set_middle_pwm(boolean dir, int PWM)
+{
+  mpwm = PWM;
+  mdir = dir;
+}
+
+void set_ring_pwm(boolean dir, int PWM)
+{
+  rpwm = PWM;
+  rdir = dir;
+}
+
+void set_pinky_pwm(boolean dir, int PWM)
+{
+  ppwm = PWM;
+  pdir = dir;
+}

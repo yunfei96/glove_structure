@@ -15,8 +15,7 @@ struct encoder
 struct sensor
 {
     struct encoder enc;
-    short tt_pot; 
-    short te_pot; 
+    short tt_pot;  
     short i_pot; 
     short m_pot; 
     short r_pot; 

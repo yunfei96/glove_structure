@@ -6,10 +6,17 @@ static void highlevel(void* arg)
     {
       //read the incoming byte:
       char in = Serial.read();
+      //-----------------if command is release------------
+      if(in == 'r')
+      {
+        start_replase();
+        Serial.print("Release");
+      }
+      //-----------------if command is grasp--------------
       if(in == 'g')
       {
-        //do whatever
-        Serial.print("I received: g");
+        start_grasp();
+        Serial.print("Grasp");
       }
     }
   }

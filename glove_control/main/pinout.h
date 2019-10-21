@@ -43,4 +43,12 @@
 #define pinky_encB 34
 #define pinky_potPin 18
 
+#define i_GRASP false
+#define i_RELEASE true
+#define i_MIN 100
+#define i_MAX 900
+#define m_GRASP true
+#define m_RELEASE false
+#define m_MIN 1
+#define m_MAX 900
 #endif

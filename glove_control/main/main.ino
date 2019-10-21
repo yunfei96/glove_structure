@@ -2,6 +2,8 @@
 #include "pinout.h" //contain the pinout for encoder, pwm, and pot
 #include <FreeRTOS_ARM.h>
 #include "queue.h"
+#include <vector>
+using namespace std;
 
 IntervalTimer myTimer;
 

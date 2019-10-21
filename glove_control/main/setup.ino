@@ -54,7 +54,7 @@ void setup_interrupt()
   attachInterrupt(pinky_encA, p_enc_ISR, CHANGE);
   
   //-----------------------------set up timer interrupt------------------------------
-   myTimer.begin(sensorTimer, 150000);
+   myTimer.begin(sensorTimer, 10000);
    
   //-----------------------------set up adc interrupt----------------------------
 }
